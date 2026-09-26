@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Msengana Eco Tracker: satellite GPS tracking for livestock and wildlife with instant SMS theft alerts. R100 per month per tracker. Built for South African farmers." />
+  <title>Msengana Eco Tracker</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <noscript><style>.reveal,.reveal-left,.reveal-right,.service-card,.spec-row,.contact-card{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>🇿🇦 Serving South Africa's farmers and conservationists</span>
+      <div class="topbar-links">
+        <a href="mailto:Msenganaecotracker@gmail.com">Msenganaecotracker@gmail.com</a>
+        <span class="divider">|</span>
+        <a href="tel:+27796908421">079 690 8421</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="logo-title">
+        <img src="msengana-logo.png" alt="Msengana Eco Tracker" width="40" height="40" />
+        <div class="logo-text">
+          <span class="brand-name">Msengana</span>
+          <span class="brand-sub">Eco Tracker</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#specs">Specifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn-primary header-cta">Contact Us</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+      <li><a href="#demo" onclick="closeMobileNav()">Demo</a></li>
+      <li><a href="#pricing" onclick="closeMobileNav()">Pricing</a></li>
+      <li><a href="#services" onclick="closeMobileNav()">Services</a></li>
+      <li><a href="#specs" onclick="closeMobileNav()">Specifications</a></li>
+      <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="farm.jpg" alt="South African farmland" class="hero-bg-img" width="463" height="257" fetchpriority="high" decoding="async" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">South Africa's #1 Eco-Tracking Solution</div>
+        <h1>Protect What<br>Matters Most.</h1>
+        <p class="hero-desc">Satellite GPS tracking, instant SMS alerts, and geofencing — built specifically for South African farmers and conservationists. No app required.</p>
+        <div class="hero-price-mobile"><strong>R100</strong> per month per tracker</div>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
+          <a href="#specs" class="btn btn-ghost btn-lg">View Specifications</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-label">Monthly Subscription</div>
+        <div class="hero-card-price">R100<span>/month per tracker</span></div>
+        <ul class="hero-card-list">
+          <li><span class="check">✓</span> 24/7 Real-Time Tracking</li>
+          <li><span class="check">✓</span> Instant SMS Theft Alerts</li>
+          <li><span class="check">✓</span> Google Maps Integration</li>
+          <li><span class="check">✓</span> Geofencing Zones</li>
+          <li><span class="check">✓</span> No App Download Needed</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-full" style="justify-content:center;margin-top:8px">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-stat">
+        <span class="trust-num">24/7</span>
+        <span class="trust-label">Real-Time Monitoring</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-stat">
+        <span class="trust-num">R100</span>
+        <span class="trust-label">Per Tracker / Month</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-stat">
+        <span class="trust-num">SMS</span>
+        <span class="trust-label">Instant Alerts</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-stat">
+        <span class="trust-num">0</span>
+        <span class="trust-label">App Downloads Required</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-left reveal-left">
+        <span class="eyebrow">Who We Are</span>
+        <h2>Built for the Land.<br>Trusted by Farmers.</h2>
+        <p>At Msengana Eco Tracker, we combine cutting-edge satellite technology with eco-friendly practices to deliver precision livestock and wildlife tracking across South Africa.</p>
+        <p>Our solution requires no smartphone app — a simple SMS delivers a Google Maps link directly to your phone, giving you real-time location awareness whether you're in the field or at home.</p>
+        <div class="about-badges">
+          <span class="badge">✓ No App Required</span>
+          <span class="badge">✓ Google Maps Integration</span>
+          <span class="badge">✓ Theft Detection</span>
+          <span class="badge">✓ Eco-Friendly Design</span>
+          <span class="badge">✓ Speed Monitoring</span>
+          <span class="badge">✓ Geofencing Alerts</span>
+        </div>
+      </div>
+      <div class="about-right reveal-right">
+        <div class="about-img-wrap">
+          <img src="Tracker.jpeg" alt="Msengana Eco Tracker device" width="1600" height="1066" loading="lazy" decoding="async" />
+          <div class="about-img-badge">
+            <span class="img-badge-icon">🛰️</span>
+            <span>Satellite + GPS<br>Powered</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section id="demo" class="section-video">
+    <div class="container video-layout">
+      <div class="video-copy">
+        <span class="eyebrow">Product Demo</span>
+        <h2>See It In Action</h2>
+        <p class="section-desc">Watch how the Msengana Eco Tracker works in real South African farming conditions.</p>
+        <a href="#contact" class="btn btn-ghost btn-lg">Contact Us</a>
+      </div>
+      <div class="video-phone reveal">
+        <video controls playsinline webkit-playsinline preload="metadata" poster="poster.jpg" width="720" height="1280">
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag. <a href="video.mp4">Download the video</a>.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Pricing</span>
+        <h2>R100 per month per tracker</h2>
+        <p class="section-desc">One simple monthly price for every tracker. Send us a message and we'll get you set up.</p>
+      </div>
+
+      <div class="pricing-card reveal">
+        <div class="pricing-img-wrap">
+          <img src="Tracker.jpeg" alt="Msengana Eco Tracker device" class="pricing-img" width="1600" height="1066" loading="lazy" decoding="async" />
+        </div>
+        <div class="pricing-body">
+          <h3>Msengana Eco Tracker</h3>
+          <div class="pricing-price">R100 <span>per month per tracker</span></div>
+          <ul class="pricing-features">
+            <li><span class="cf-check">✓</span> 24/7 Satellite GPS Tracking</li>
+            <li><span class="cf-check">✓</span> Instant SMS Theft Alerts</li>
+            <li><span class="cf-check">✓</span> Google Maps Integration</li>
+            <li><span class="cf-check">✓</span> Geofencing Zone Alerts</li>
+            <li><span class="cf-check">✓</span> Speed &amp; Movement Monitoring</li>
+            <li><span class="cf-check">✓</span> No App Required</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-lg btn-full" style="justify-content:center">Contact Us to Order</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Our Services</span>
+        <h2>What We Offer</h2>
+        <p class="section-desc">Comprehensive tracking and monitoring services tailored for South African conditions.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🛰️</div>
+          <h3>Live GPS Tracking</h3>
+          <p>Real-time satellite positioning updates delivered via SMS with a Google Maps link. Track anywhere in South Africa with no app needed.</p>
+        </div>
+        <div class="service-card service-featured reveal">
+          <div class="service-featured-label">Core Feature</div>
+          <div class="service-icon">🚨</div>
+          <h3>Instant Theft Alerts</h3>
+          <p>Speed-based theft detection automatically sends emergency SMS alerts the moment abnormal movement is detected. Lightning fast.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🗺️</div>
+          <h3>Geofencing Zones</h3>
+          <p>Define virtual boundaries for your farm or reserve. Receive an instant alert the moment your livestock or equipment crosses the line.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">📱</div>
+          <h3>SMS-Based Monitoring</h3>
+          <p>No app, no data contract required. Works on any basic phone. Simply SMS the tracker and receive a live location link in seconds.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🌱</div>
+          <h3>Eco-Friendly Hardware</h3>
+          <p>Solar-assisted, energy-efficient casing built to survive harsh South African farming environments. Minimal environmental footprint.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">⚡</div>
+          <h3>Instant Activation</h3>
+          <p>Your tracker is activated within minutes of purchase. No signup, no app download. Just pay and start tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIFICATIONS -->
+  <section id="specs" class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Technical Specifications</span>
+        <h2>How It Works</h2>
+        <p class="section-desc">Built on proven satellite and GPS technology, designed to perform in every corner of South Africa.</p>
+      </div>
+      <div class="specs-table">
+        <div class="spec-row reveal">
+          <div class="spec-icon-col">🛰️</div>
+          <div class="spec-body">
+            <h3>Satellite + GPS Dual Tracking</h3>
+            <p>Combines GPS satellite triangulation with cell tower data for maximum accuracy — even in remote farm areas with limited signal coverage.</p>
+          </div>
+          <div class="spec-tag">GPS + Satellite</div>
+        </div>
+        <div class="spec-row reveal">
+          <div class="spec-icon-col">📍</div>
+          <div class="spec-body">
+            <h3>Google Maps Integration</h3>
+            <p>Every location update arrives as a direct Google Maps link via SMS. No account needed — just tap the link to see your asset's exact position.</p>
+          </div>
+          <div class="spec-tag">Google Maps</div>
+        </div>
+        <div class="spec-row reveal">
+          <div class="spec-icon-col">🔔</div>
+          <div class="spec-body">
+            <h3>Geofencing & Zone Alerts</h3>
+            <p>Configure virtual perimeters around your farm, kraal, or reserve. Instant SMS notification when boundaries are breached — day or night.</p>
+          </div>
+          <div class="spec-tag">Geofencing</div>
+        </div>
+        <div class="spec-row reveal">
+          <div class="spec-icon-col">🚗</div>
+          <div class="spec-body">
+            <h3>Speed Monitoring & Theft Detection</h3>
+            <p>Detects abnormal movement speeds consistent with vehicle transport — immediately flags potential theft events and sends an emergency SMS alert.</p>
+          </div>
+          <div class="spec-tag">Anti-Theft</div>
+        </div>
+        <div class="spec-row reveal">
+          <div class="spec-icon-col">🍃</div>
+          <div class="spec-body">
+            <h3>Eco-Friendly Hardware</h3>
+            <p>Designed with sustainability in mind — durable, energy-efficient construction that minimises environmental impact across its operational life.</p>
+          </div>
+          <div class="spec-tag">Sustainable</div>
+        </div>
+        <div class="spec-row reveal">
+          <div class="spec-icon-col">📍</div>
+          <div class="spec-body">
+            <h3>Zero-App Setup</h3>
+            <p>No app to install. No account to create. Just pay and your tracker will be activated — your Google Maps location link is delivered via SMS within minutes.</p>
+          </div>
+          <div class="spec-tag">Plug & Play</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Contact Us</h2>
+        <p class="section-desc">Fill in the form and our team will get back to you about the right tracking solution for your farm or reserve.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-form-card reveal">
+          <h3>Send us a message</h3>
+          <p class="form-sub">We'll reply to the email address you enter below.</p>
+
+          <a href="Msengana-Eco-Tracker-Contract-Agreement.pdf" download class="contract-download-note">
+            <span class="contract-download-icon">📄</span>
+            <span>
+              <strong>Download our Service Agreement</strong>
+              <span>Print it, sign it, then upload the signed copy below.</span>
+            </span>
+            <span class="contact-arrow">⬇</span>
+          </a>
+
+          <form id="contact-form" class="contact-form" novalidate enctype="multipart/form-data">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="c-name">Full name *</label>
+                <input type="text" id="c-name" name="name" placeholder="Sipho Dlamini" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="c-phone">Phone / WhatsApp <span class="opt">(optional)</span></label>
+                <input type="tel" id="c-phone" name="phone" placeholder="079 690 8421" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="c-email">Email address *</label>
+                <input type="email" id="c-email" name="email" placeholder="sipho@email.com" autocomplete="email" required />
+              </div>
+              <div class="form-group">
+                <label for="c-trackers">Trackers needed <span class="opt">(optional)</span></label>
+                <input type="number" id="c-trackers" name="trackers_needed" min="1" placeholder="e.g. 10" inputmode="numeric" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="c-message">Message *</label>
+              <textarea id="c-message" name="message" placeholder="Tell us what you'd like to track and any questions you have." required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="c-contract">Signed contract <span class="opt">(optional)</span></label>
+              <input type="file" id="c-contract" name="contract" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
+              <span class="file-hint">PDF, Word doc, or a photo of the signed page. Max 5MB.</span>
+            </div>
+
+            <!-- Spam trap: real visitors never see or fill this in -->
+            <div class="hp" aria-hidden="true">
+              <label for="c-website">Leave this field empty</label>
+              <input type="text" id="c-website" name="_honey" tabindex="-1" autocomplete="off" />
+            </div>
+            <button type="submit" id="contact-submit" class="btn btn-primary btn-lg btn-full" style="justify-content:center">Send message</button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="contact-side">
+          <a href="mailto:Msenganaecotracker@gmail.com" class="contact-card reveal">
+            <div class="contact-card-icon">✉️</div>
+            <div class="contact-card-body">
+              <h4>Email Us</h4>
+              <p>Msenganaecotracker@gmail.com</p>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://wa.me/27796908421" class="contact-card reveal">
+            <div class="contact-card-icon">💬</div>
+            <div class="contact-card-body">
+              <h4>WhatsApp</h4>
+              <p>079 690 8421</p>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="tel:+27796908421" class="contact-card reveal">
+            <div class="contact-card-icon">📞</div>
+            <div class="contact-card-body">
+              <h4>Call Us</h4>
+              <p>079 690 8421</p>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="container footer-top-inner">
+        <div class="footer-brand">
+          <img src="msengana-logo.png" alt="Msengana Eco Tracker" width="48" height="48" loading="lazy" decoding="async" />
+          <div>
+            <span class="footer-brand-name">Msengana Eco Tracker</span>
+            <span class="footer-brand-tagline">"Precision Tracking and Endless Protection"</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#services">Services</a>
+            <a href="#specs">Specifications</a>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <a href="mailto:Msenganaecotracker@gmail.com">Email Us</a>
+            <a href="https://wa.me/27796908421">WhatsApp</a>
+            <a href="tel:+27796908421">079 690 8421</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Msengana Eco Tracker. All rights reserved.</p>
+        <p>Proudly South African 🇿🇦</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QUICK ACTIONS (phones only) -->
+  <div class="mobile-actions" role="navigation" aria-label="Quick contact">
+    <a href="tel:+27796908421" class="ma-call">📞 Call</a>
+    <a href="https://wa.me/27796908421" class="ma-wa">💬 WhatsApp</a>
+    <a href="#contact" class="ma-msg">✉️ Message</a>
+  </div>
+
+  <script>
+    // =====================
+    // CONTACT FORM -> EMAIL
+    // Sends to Msenganaecotracker@gmail.com via FormSubmit (no server needed)
+    // =====================
+    const CONTACT_EMAIL = 'Msenganaecotracker@gmail.com';
+    const FORM_ENDPOINT = 'https://formsubmit.co/ajax/' + CONTACT_EMAIL;
+
+    const form = document.getElementById('contact-form');
+    const statusBox = document.getElementById('form-status');
+    const submitBtn = document.getElementById('contact-submit');
+
+    function showStatus(type, html) {
+      statusBox.className = 'form-status show ' + type;
+      statusBox.innerHTML = html;
+      statusBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('c-name').value.trim();
+      const email = document.getElementById('c-email').value.trim();
+      const message = document.getElementById('c-message').value.trim();
+
+      if (!name || !email || !message) {
+        showStatus('error', 'Please fill in your name, email address and message.');
+        return;
+      }
+      if (!/^\S+@\S+\.\S+$/.test(email)) {
+        showStatus('error', 'Please enter a valid email address so we can reply to you.');
+        return;
+      }
+
+      const contractFile = document.getElementById('c-contract').files[0];
+      if (contractFile && contractFile.size > 5 * 1024 * 1024) {
+        showStatus('error', 'That file is larger than 5MB. Please upload a smaller file, or email it to us directly.');
+        return;
+      }
+
+      // Using FormData (not JSON) so the uploaded contract file can be attached
+      const payload = new FormData();
+      payload.append('name', name);
+      payload.append('email', email);
+      payload.append('phone', document.getElementById('c-phone').value.trim() || 'Not provided');
+      payload.append('trackers_needed', document.getElementById('c-trackers').value.trim() || 'Not provided');
+      payload.append('message', message);
+      if (contractFile) payload.append('attachment', contractFile);
+      payload.append('_honey', document.getElementById('c-website').value);
+      payload.append('_subject', 'New website enquiry from ' + name + ' - Msengana Eco Tracker');
+      payload.append('_template', 'table');
+      payload.append('_captcha', 'false');
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      statusBox.className = 'form-status';
+
+      try {
+        // Do NOT set a Content-Type header here — the browser sets the correct
+        // multipart boundary automatically when the body is a FormData object.
+        const res = await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: payload
+        });
+        const data = await res.json().catch(() => ({}));
+
+        if (res.ok && (data.success === true || data.success === 'true')) {
+          showStatus('success', 'Thank you, ' + name.split(' ')[0] + '! Your message has been sent. We will reply to ' + email + ' shortly.');
+          form.reset();
+        } else {
+          throw new Error(data.message || 'Send failed');
+        }
+      } catch (err) {
+        showStatus('error',
+          'Sorry, your message could not be sent. Please try again, or contact us directly on ' +
+          '<a href="https://wa.me/27796908421">WhatsApp</a> or at ' +
+          '<a href="mailto:' + CONTACT_EMAIL + '">' + CONTACT_EMAIL + '</a>.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send message';
+      }
+    });
+
+    // =====================
+    // STICKY HEADER
+    // =====================
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    // Mobile nav
+    const toggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    function setMenu(open) {
+      mobileNav.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      toggle.innerHTML = open ? '&#10005;' : '&#9776;';
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    toggle.addEventListener('click', () => setMenu(!mobileNav.classList.contains('open')));
+    function closeMobileNav() { setMenu(false); }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+    window.addEventListener('resize', () => { if (window.innerWidth > 768) setMenu(false); });
+
+    // Hide the quick-action bar while typing so it never covers the form or keyboard
+    const actionBar = document.querySelector('.mobile-actions');
+    form.addEventListener('focusin', () => actionBar.classList.add('hidden'));
+    form.addEventListener('focusout', () => actionBar.classList.remove('hidden'));
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .service-card, .spec-row, .contact-card').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
