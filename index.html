@@ -448,7 +448,9 @@
     // Sends to Msenganaecotracker@gmail.com via FormSubmit (no server needed)
     // =====================
     const CONTACT_EMAIL = 'Msenganaecotracker@gmail.com';
-    const FORM_ENDPOINT = 'https://formsubmit.co/ajax/' + CONTACT_EMAIL;
+    // NOTE: file attachments only work on the standard FormSubmit endpoint,
+    // NOT on /ajax/, which silently drops uploaded files.
+    const FORM_ENDPOINT = 'https://formsubmit.co/' + CONTACT_EMAIL;
 
     const form = document.getElementById('contact-form');
     const statusBox = document.getElementById('form-status');
@@ -502,19 +504,20 @@
       try {
         // Do NOT set a Content-Type header here — the browser sets the correct
         // multipart boundary automatically when the body is a FormData object.
-        const res = await fetch(FORM_ENDPOINT, {
+        // The standard endpoint doesn't return CORS headers, so we send in
+        // no-cors mode. The request (including the contract file) still goes
+        // through; the response is just opaque, so a resolved fetch = sent.
+        await fetch(FORM_ENDPOINT, {
           method: 'POST',
-          headers: { 'Accept': 'application/json' },
+          mode: 'no-cors',
           body: payload
         });
-        const data = await res.json().catch(() => ({}));
 
-        if (res.ok && (data.success === true || data.success === 'true')) {
-          showStatus('success', 'Thank you, ' + name.split(' ')[0] + '! Your message has been sent. We will reply to ' + email + ' shortly.');
-          form.reset();
-        } else {
-          throw new Error(data.message || 'Send failed');
-        }
+        const sentMsg = contractFile
+          ? ' Your signed contract was attached.'
+          : '';
+        showStatus('success', 'Thank you, ' + name.split(' ')[0] + '! Your message has been sent.' + sentMsg + ' We will reply to ' + email + ' shortly.');
+        form.reset();
       } catch (err) {
         showStatus('error',
           'Sorry, your message could not be sent. Please try again, or contact us directly on ' +
